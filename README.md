@@ -45,4 +45,15 @@ python train.py
 
 ## Generated vs Original Mel  
 
-![](./img/mels.png)
+![](./img/mels.png)  
+
+
+## Note  
+
+## References  
+
+- [FastSpeech 2: Fast and High-Quality End-to-End Text to Speech](https://arxiv.org/abs/2006.04558)
+- [FastSpeech: Fast, Robust and Controllable Text to Speech](https://arxiv.org/abs/1905.09263)
+- [MelGAN](https://github.com/seungwonpark/melgan)
+- [rishikksh20/FastSpeech2](https://github.com/rishikksh20/FastSpeech2)
+- [Deepest-Project FastSpeech](https://github.com/Deepest-Project/FastSpeech)
