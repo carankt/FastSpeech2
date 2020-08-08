@@ -7,7 +7,7 @@ I would be glad if anyone reading this repo can take up the training with `batch
 
 
 ## For Demo  
-Download the checkpoint from [here](). Place it in the `training_log` folder. And run the [inference.ipynb](./inference.ipynb). For mel to audio generation I have used MelGan from :flashlight: torch hub.  
+Download the checkpoint from [here](https://drive.google.com/file/d/12jW1KivfEjv4YBs6gAZVdVWJ-muZv6CQ/view?usp=sharing). Place it in the `training_log` folder. And run the [inference.ipynb](./inference.ipynb). For mel to audio generation I have used MelGan from :flashlight: torch hub.  
 
 ## Requirements  
 All code is writen in `python 3.6.10`.  
