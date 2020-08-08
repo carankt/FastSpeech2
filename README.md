@@ -32,15 +32,15 @@ Make sure you have the `training_log` folder existing in the repo before running
 ```
 python train.py
 ```  
-## Tensorboard images
 
+## Tensorboard images
 ![](./img/duration_loss.png)
 ![](./img/pitch_loss.png)
 ![](./img/energy_loss.png)
 ![](./img/mel_loss.png)  
 
 
-![](./img/val_loss.png)
+![](./img/mels.png)
 
 
 ## Generated vs Original Mel
