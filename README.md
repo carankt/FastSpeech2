@@ -6,7 +6,7 @@ I would be glad if anyone reading this repo can take up the training with `batch
 ![](./img/fastspeech2.png)  
 
 
-## For Demo :sunny:  
+## Demo :sunny:  
 Download the checkpoint from [here](https://drive.google.com/file/d/12jW1KivfEjv4YBs6gAZVdVWJ-muZv6CQ/view?usp=sharing) trained on LJSpeech dataset. Place it in the `training_log` folder. And run the [inference.ipynb](./inference.ipynb). For mel to audio generation I have used MelGan from :flashlight: torch hub.  
 
 ## Requirements :sunny:
@@ -49,6 +49,13 @@ python train.py
 
 
 ## Note  :sunny:
+- The output of the present checkpoint is not good, because of lack of training. Will update with the best checkpoint as soon as I can.  
+- There are outliers in the dataset that needs to be taken care. Hopefully that can make the training more lean. 
+- Using a lower batch size doesnot work well with this model.
+- Normalizing pitch and energy may also help with faster training or better convergence. 
+- This model was trained on Nvidia GTX GeForce 960M 4gb, which is pretty low standard in comparison to the requirements of this model.
+- Feel free to share intresting insights. 
+
 
 ## References  :sunny:
 
@@ -57,3 +64,5 @@ python train.py
 - [MelGAN](https://github.com/seungwonpark/melgan)
 - [rishikksh20/FastSpeech2](https://github.com/rishikksh20/FastSpeech2)
 - [Deepest-Project FastSpeech](https://github.com/Deepest-Project/FastSpeech)
+
+### Happy Learning! :smile:
