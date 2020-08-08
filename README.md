@@ -6,10 +6,10 @@ I would be glad if anyone reading this repo can take up the training with `batch
 ![](./img/fastspeech2.png)  
 
 
-## For Demo  
+## For Demo :sunny:  
 Download the checkpoint from [here](https://drive.google.com/file/d/12jW1KivfEjv4YBs6gAZVdVWJ-muZv6CQ/view?usp=sharing) trained on LJSpeech dataset. Place it in the `training_log` folder. And run the [inference.ipynb](./inference.ipynb). For mel to audio generation I have used MelGan from :flashlight: torch hub.  
 
-## Requirements  
+## Requirements :sunny:
 All code is writen in `python 3.6.10`.  
 `requirements.txt` contains the list of all packages required to run this repo.
 ```
@@ -19,7 +19,7 @@ For smooth working download the latest torch and suitable cuda version from [her
 
 Before moving to the next step update the `hparams.py` file as per your requirements. 
 
-## Pre-preocessing  
+## Pre-preocessing :sunny:
 The folder [MFA_filelist](./MFA_filelist/) contains pre extracted alignments using [Montreal Forced Aligner](https://montreal-forced-aligner.readthedocs.io/en/latest/) on the [LJSpeech](https://keithito.com/LJ-Speech-Dataset/) Dataset. For more information on using MFA visit [here](https://github.com/ivanvovk/DurIAN#6-how-to-align-your-own-data). 
 ```
 python preprocess.py -d /root_path/to/wavs/
@@ -27,13 +27,13 @@ python compute_statistics.py
 ```
 Update the hparams.py file with appropraite infor about pitch and energy  
 
-## Train
+## Train :sunny:
 Make sure you have the `training_log` folder existing in the repo before running the below command.
 ```
 python train.py
 ```  
 
-## Tensorboard images
+## Tensorboard images :sunny:
 ![](./img/duration_loss.png)
 ![](./img/pitch_loss.png)
 ![](./img/energy_loss.png)
@@ -43,14 +43,14 @@ python train.py
 
 
 
-## Generated vs Original Mel  
+## Generated vs Original Mel  :sunny:
 
 ![](./img/mels.png)  
 
 
-## Note  
+## Note  :sunny:
 
-## References  
+## References  :sunny:
 
 - [FastSpeech 2: Fast and High-Quality End-to-End Text to Speech](https://arxiv.org/abs/2006.04558)
 - [FastSpeech: Fast, Robust and Controllable Text to Speech](https://arxiv.org/abs/1905.09263)
