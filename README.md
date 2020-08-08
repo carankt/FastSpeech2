@@ -38,10 +38,11 @@ python train.py
 ![](./img/pitch_loss.png)
 ![](./img/energy_loss.png)
 ![](./img/mel_loss.png)  
+![](./img/val_loss.png)
 
+
+
+
+## Generated vs Original Mel  
 
 ![](./img/mels.png)
-
-
-## Generated vs Original Mel
-
