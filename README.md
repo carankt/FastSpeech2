@@ -7,7 +7,7 @@ I would be glad if anyone reading this repo can take up the training with `batch
 
 
 ## For Demo  
-Download the checkpoint from [here](https://drive.google.com/file/d/12jW1KivfEjv4YBs6gAZVdVWJ-muZv6CQ/view?usp=sharing). Place it in the `training_log` folder. And run the [inference.ipynb](./inference.ipynb). For mel to audio generation I have used MelGan from :flashlight: torch hub.  
+Download the checkpoint from [here](https://drive.google.com/file/d/12jW1KivfEjv4YBs6gAZVdVWJ-muZv6CQ/view?usp=sharing) trained on LJSpeech dataset. Place it in the `training_log` folder. And run the [inference.ipynb](./inference.ipynb). For mel to audio generation I have used MelGan from :flashlight: torch hub.  
 
 ## Requirements  
 All code is writen in `python 3.6.10`.  
@@ -15,5 +15,33 @@ All code is writen in `python 3.6.10`.
 ```
 pip install -r requirements.txt
 ```  
+For smooth working download the latest torch and suitable cuda version from [here](https://pytorch.org/). This repo works with pytorch => 1.4. Not sure about the lower versions, let me know if they work.  
 
-## 
+Before moving to the next step update the `hparams.py` file as per your requirements. 
+
+## Pre-preocessing  
+The folder [MFA_filelist](./MFA_filelist/) contains pre extracted alignments using [Montreal Forced Aligner](https://montreal-forced-aligner.readthedocs.io/en/latest/) on the [LJSpeech](https://keithito.com/LJ-Speech-Dataset/) Dataset. For more information on using MFA visit [here](https://github.com/ivanvovk/DurIAN#6-how-to-align-your-own-data). 
+```
+python preprocess.py -d /root_path/to/wavs/
+python compute_statistics.py
+```
+Update the hparams.py file with appropraite infor about pitch and energy  
+
+## Train
+Make sure you have the `training_log` folder existing in the repo before running the below command.
+```
+python train.py
+```  
+## Tensorboard images
+
+![](./img/duration_loss.png)
+![](./img/pitch_loss.png)
+![](./img/energy_loss.png)
+![](./img/mel_loss.png)  
+
+
+![](./img/val_loss.png)
+
+
+## Generated vs Original Mel
+
