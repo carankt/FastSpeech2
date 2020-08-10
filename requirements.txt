@@ -1,6 +1,6 @@
 numpy==1.16.3
 librosa==0.7.2
-matplotlib
+matplotlib==3.1.1
 unidecode
 inflect
 nltk
